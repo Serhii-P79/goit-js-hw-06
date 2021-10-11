@@ -14,7 +14,7 @@ const images = [
 ];
 
 const galleryRef = document.querySelector(".gallery");
-console.log(galleryRef);
+//console.log(galleryRef);
 galleryRef.classList.add("ul-clear-list-style");
 
 const getImagesRef = (images) => {
@@ -25,6 +25,7 @@ const getImagesRef = (images) => {
     liRef.insertAdjacentHTML("afterbegin", imgRef);
 
     liRef.firstChild.style.display = "block";
+    liRef.firstChild.style.padding = "5px";
     liRef.firstChild.width = 400;
 
     return liRef;
