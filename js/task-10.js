@@ -16,7 +16,8 @@ function createBoxes(amount) {
     allDiv += `<div style="width: ${sizeCreateDiv}px;height: ${sizeCreateDiv}px; background-color: ${getRandomHexColor()};"></div>`;
     sizeCreateDiv += 10;
   }
-  targetDivRef.innerHTML = allDiv;
+  //targetDivRef.innerHTML = allDiv;
+  targetDivRef.insertAdjacentHTML("beforeend", allDiv);
 }
 
 function onDestroyBoxesClick() {

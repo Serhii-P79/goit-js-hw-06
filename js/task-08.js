@@ -9,7 +9,6 @@ formLoginRef.addEventListener("submit", (event) => {
 
   if (!email.value || !password.value) {
     alert("Все поля должны быть заполнены");
-    return false;
   } else {
     const sendData = {
       email: email.value,
