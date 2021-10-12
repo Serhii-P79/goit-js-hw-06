@@ -10,15 +10,15 @@ updateValueThePage(counterValue);
 const buttonDecrementRef = document.querySelector('button[data-action="decrement"]');
 const buttonIncrementRef = document.querySelector('button[data-action="increment"]');
 
-const counterValueDecrement = () => {
+const onCounterValueDecrementClick = () => {
   counterValue -= 1;
   updateValueThePage(counterValue);
 };
 
-const counterValueIncrement = () => {
+const onCounterValueIncrementClick = () => {
   counterValue += 1;
   updateValueThePage(counterValue);
 };
 
-buttonDecrementRef.addEventListener("click", counterValueDecrement);
-buttonIncrementRef.addEventListener("click", counterValueIncrement);
+buttonDecrementRef.addEventListener("click", onCounterValueDecrementClick);
+buttonIncrementRef.addEventListener("click", onCounterValueIncrementClick);

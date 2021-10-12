@@ -19,7 +19,7 @@ function createBoxes(amount) {
   targetDivRef.innerHTML = allDiv;
 }
 
-function destroyBoxes() {
+function onDestroyBoxesClick() {
   const targetDivRef = document.querySelector("#boxes");
   targetDivRef.innerHTML = "";
 }
@@ -34,4 +34,4 @@ buttonCreateElemRef.addEventListener("click", (e) => {
   createBoxes(countElemet);
 });
 
-buttonDestroyElemRef.addEventListener("click", destroyBoxes);
+buttonDestroyElemRef.addEventListener("click", onDestroyBoxesClick);
