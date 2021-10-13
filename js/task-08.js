@@ -5,7 +5,7 @@ formLoginRef.addEventListener("submit", (event) => {
 
   const {
     elements: { email, password },
-  } = event.target;
+  } = event.currentTarget;
 
   if (!email.value || !password.value) {
     alert("Все поля должны быть заполнены");
@@ -15,6 +15,6 @@ formLoginRef.addEventListener("submit", (event) => {
       password: password.value,
     };
     console.log(sendData);
-    event.target.reset();
+    event.currentTarget.reset();
   }
 });
